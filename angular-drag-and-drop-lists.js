@@ -96,7 +96,7 @@
 
         // Initialize global state.
         dndState.isDragging = true;
-        dndState.itemType = attr.dndType && scope.$eval(attr.dndType).toLowerCase();
+        dndState.itemType = attr.dndType && scope.$eval(attr.dndType);
 
         // Set the allowed drop effects. See below for special IE handling.
         dndState.dropEffect = "none";
